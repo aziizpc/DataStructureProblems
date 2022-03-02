@@ -1,0 +1,24 @@
+1. ArrayList:
+- List<Integer> myList = new ArrayList<>(Arrays.asList(myArray));
+- myArray = myList.toArray(myArray); --> List to Array conversion and store in same array
+- 
+
+
+2. Array:
+- Integer[] myArray = { 9, 6, 4, 90, 34 }; | int myArray[] = { 9, 6, 4, 90, 34 }; | 
+- Arrays.toString(myArray)
+- Arrays.asList(myArray) --> To get as ArrayList
+
+
+3. final:
+- This is a keyword.
+- To declare a variable whose value cannot be changed.
+- To prevent inheritance.
+- To prevent method overriding  (Declare a method as final in Parent Class and then, in the Child class, a method with the same name not possible.)
+
+
+4. finally:
+- This is a block
+
+5. finalize:
+- This is a method.
