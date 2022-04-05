@@ -6,12 +6,12 @@ public class FindDuplicateElementsInAnArray {
 
 	public static void main(String[] args) {
 
-		int num[] = { 5, 8, 90, 96, 4, 1, 5, 6, 5, 11, 88, 11 };
+		int num[] = { 5, 8, 90, 96, 4, 1, 5, 6, 5, 11, 88, 11, 5, 90 };
 
 		// Method 1:
 		boolean flag1 = false;
 
-		for (int i = 0; i < num.length; i++) {
+		for (int i = 0; i < num.length - 1; i++) {
 			for (int j = i + 1; j < num.length; j++) {
 				if (num[i] == num[j]) {
 					System.out.println("Duplicate element: " + num[i]);

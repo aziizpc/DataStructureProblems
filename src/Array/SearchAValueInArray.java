@@ -13,7 +13,7 @@ public class SearchAValueInArray {
 				return i;
 			}
 		}
-		return -1;
+		return -1;	// Case: Not found in array
 	}
 
 	public static void main(String[] args) {

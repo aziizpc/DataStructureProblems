@@ -10,9 +10,11 @@ public class ArmstrongNumber {
 
 		int temp = num;
 
+		int numberOfDigits = (int) (Math.log10(num) + 1);	// Note: Gives number of digits
+
 		while (num > 0) {
 			rem = num % 10;
-			calc = calc + (rem * rem * rem);
+			calc = (int) (calc + (Math.pow(rem, numberOfDigits)));	// Math.pow returns double. Hence (int)
 			num = num / 10;
 		}
 

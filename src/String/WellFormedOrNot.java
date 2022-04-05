@@ -2,7 +2,7 @@ package String;
 
 import java.util.Stack;
 
-public class CheckGivenStringIsWellFormedOrNot {
+public class WellFormedOrNot {
 
 	// function to check if brackets are balanced
 	static boolean areBracketsBalanced(String s) { // Note: static function
@@ -20,6 +20,8 @@ public class CheckGivenStringIsWellFormedOrNot {
 				System.out.println("Push: " + myStack);
 				continue; // Stops current iteration and go to the next one
 			}
+			
+			//System.out.println("Test");
 
 			// If current character is not opening
 			// bracket, then it must be closing. So stack
@@ -60,7 +62,7 @@ public class CheckGivenStringIsWellFormedOrNot {
 	// Driver code
 	public static void main(String[] args) {
 		// String s = "{}([{}])[]";
-		String s = "(A)";
+		String s = "[[(A)]]";
 
 		// Function call
 		if (areBracketsBalanced(s))
